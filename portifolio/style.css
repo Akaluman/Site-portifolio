@@ -1,0 +1,170 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: coral;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background-color: burlywood;
+    color: cornflowerblue;
+    padding: 1rem;
+    text-align: center;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul li a {
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: coral;
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: steelblue;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideInFromRight 1.5s ease-in-out;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: burlywood;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: burlywood;
+}
+
+.projeto1,
+.projeto2,
+.projeto3 {
+    margin-top: 2rem;
+}
+
+.projeto1 h3,
+.projeto2 h3,
+.projeto3 h3 {
+    font-size: 1.5rem;
+    color: plum;
+}
+
+.projeto1 p,
+.projeto2 p,
+.projeto3 p {
+    font-size: 1.1rem;
+    color: burlywood;
+}
+
+img {
+    border-radius: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: burlywood;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: cornflowerblue;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: burlywood;
+}
